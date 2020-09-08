@@ -6,4 +6,6 @@
 # If you get a Nan, then for some datasets better to decrease learning rate, for 4 GPUs set learning_rate = 0,00065 (i.e. learning_rate = 0.00261 / GPUs). In this case also increase 4x times burn_in = in your cfg-file. I.e. use burn_in = 4000 instead of 1000.
 
 
-./darknet detector train data/lishui_0902/trafficlights2.data cfg/yolov3-giou-lishui0902.cfg data/lishui_0902/trained_weights/yolov3-giou-lishui0902_last.weights -mAP -gpus 2,3 -dont_show
+./darknet detector train data/lishui_0902/trafficlights2.data cfg/lishui_0902/yolov3-giou-lishui0902.cfg data/lishui_0902/trained_weights/yolov3-giou-lishui0902_last.weights -mAP -gpus 2,3 -dont_show
+
+./darknet detector train data/lishui_0908/trafficlights2.data cfg/lishui_0908/yolov3-giou.cfg darknet53.conv.74 -mAP -gpus 2,3 -dont_show

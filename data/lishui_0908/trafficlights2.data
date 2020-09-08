@@ -1,0 +1,5 @@
+classes= 2
+train  = data/lishui_0908/train.txt
+valid  = data/lishui_0908/train.txt
+names = data/lishui_0908/trafficlights2.names
+backup = data/lishui_0908/trained_weights
