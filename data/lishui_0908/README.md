@@ -1,4 +1,7 @@
 #　用原始的yolov3的配置
+```
+loss=0.0246
+```
 
 ```
  calculation mAP (mean average precision)...
